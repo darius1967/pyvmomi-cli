@@ -11,7 +11,9 @@ l=time.localtime(time.time())
 def get_args():
         parser = argparse.ArgumentParser(description='Arguments for talking to vCenter')
         parser.add_argument('-s', '--host',required=True,action='store',help='vcenter to connect to')
-        parser.add_argument('-a', '--action',required=True,action='store',help='vcenter action to be performed:datastoreSystem,rescanallhba,getiscsilun,resethealthsystem,buildversion,getpNic,cpuinfo,meminfo,status,sensors,getcdp,vlans,ds_health,services,startssh,startesxshell,vswitch,clusters,getprofile,newprofile,delprofile,multipath,getwwn,getstolun,getsnap,hostinfo,hyperThread,newvswitch,addvlan,connection,umount_vmtool,cd_connected,respool,no_lockdown')
+        parser.add_argument('-a', '--action',required=True,action='store',help='vcenter action to be performed:datastoreSystem,rescanallhba,getiscsilun,\
+        resethealthsystem,buildversion,getpNic,cpuinfo,meminfo,status,sensors,getcdp,vlans,ds_health,services,startssh,startesxshell,vswitch,clusters,getprofile,\
+        newprofile,delprofile,multipath,getwwn,getstolun,getsnap,hostinfo,hyperThread,newvswitch,addvlan,connection,umount_vmtool,cd_connected,respool,no_lockdown')
         parser.add_argument('-H', '--Host',required=False,action='store',help='Host to connect to')
         parser.add_argument('-u', '--user',required=True,action='store',help='User name to use')
         parser.add_argument('-p', '--password',required=False,action='store',help='Password to use')
